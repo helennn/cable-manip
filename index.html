@@ -1,0 +1,196 @@
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./resources/style.css" media="screen" />
+
+<html lang="en">
+
+<head>
+    <title>Cable Routing and Assembly using Tactile-driven Motion Primitives</title>
+    <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/
+        if you update and want to force Facebook to re-scrape. -->
+    <meta property="og:image" content="Path to my teaser.png" />
+    <meta property="og:title" content="Creative and Descriptive Paper Title." />
+    <meta property="og:description" content="Paper description." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Add your Google Analytics tag here -->
+    <!--
+    <script async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-97476543-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-97476543-1');
+    </script>
+    -->
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            Cable Routing and Assembly using Tactile-driven Motion Primitives
+        </div>
+
+        <br>
+        <br>
+
+        <div class="author">
+            <a href="https://achuwilson.com">Achu Wilson</a><sup>*1</sup>
+        </div>
+        <div class="author">
+            <a href="https://helennn.github.io/">Helen Jiang</a><sup>*1</sup>
+        </div>
+        <div class="author">
+            <a href="https://lianwenzhao.github.io/">Wenzhao Lian</a><sup>2</sup>
+        </div>
+        <div class="author">
+            <a href="http://robotouch.ri.cmu.edu/yuanwz/">Wenzhen Yuan</a><sup>1</sup>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="affiliation"><sup>1&nbsp;</sup>Carnegie Mellon University</div>
+        <div class="affiliation"><sup>2&nbsp;</sup>Intrinsic Innovation</div>
+
+        <br>
+        <br>
+
+        <div class="affiliation">In ICRA 2023</div>
+
+        <br>
+        <br>
+
+        <div class="links"><a href="">[Paper]</a></div>
+        <div class="links"><a href="https://youtu.be/_F0kCjBgxD0">[Video]</a></div>
+        <!-- <div class="links"><a href="https://github.com/jasonyzhang/webpage-template">[Code]</a></div> -->
+
+        <br>
+        <br>
+        <div class="teaser">
+            <img src="./resources/teaser.jpg" alt="Teaser figure." />
+            <br>
+
+            <!-- This template was originally made for <a href="http://richzhang.github.io/colorization/">
+                    Colorful Image Colorization</a>. It was adapted to be mobile responsive for
+                <a href="https://jasonyzhang.com/phosa/">PHOSA</a>. Try resizing this webpage
+                or opening it on your mobile device. The code can be found in
+                <a href="https://github.com/jasonyzhang/webpage-template"> this repo</a>. -->
+
+            <b>Goal-conditioned cable manipulation using visual-tactile perception. </b>
+            <i>
+                Given an RGBD image of a goal configuration, our system parses the task,
+                generates reference trajectories, and applies a sequence of tactile-guided
+                motion primitives to accomplish a cable routing and assembly task.
+            </i>
+        </div>
+
+        <br><br>
+        <hr>
+
+        <h1>Abstract</h1>
+        <p>
+            Manipulating cables is challenging for robots because of the infinite degrees of freedom of the cables
+            and
+            frequent occlusion by the gripper and the environment.
+            These challenges are further complicated by the dexterous nature of the operations required for cable
+            routing and assembly, such as weaving and inserting, hampering common solutions with vision-only
+            sensing.
+            In this paper, we propose to integrate tactile-guided low-level motion control with high-level
+            vision-based
+            task parsing for a challenging task: cable routing and assembly on a reconfigurable task board.
+            Specifically, we build a library of tactile-guided motion primitives using a fingertip GelSight sensor,
+            where each primitive reliably accomplishes an operation such as cable following and weaving. The overall
+            task is inferred via visual perception given a goal configuration image, and then used to generate the
+            primitive sequence. Experiments demonstrate the effectiveness of individual tactile-guided primitives
+            and
+            the integrated end-to-end solution, significantly outperforming the method without tactile sensing. Our
+            reconfigurable task setup and proposed baselines provide a benchmark for future research in cable
+            manipulation.
+        </p>
+
+        <br><br>
+        <hr>
+
+        <!-- <h1>Using Tactile Readings</h1>
+        <div class="readings">
+            <img src="./resources/force_all.png" alt="GelSight figures." />
+            <br>
+
+            <b>Motion Patterns of the GelSight Markers </b>
+            <br>
+            <i>
+                We use the motion patterns of the GelSight markers to determine contact forces and torques which are
+                used to estimate the cable states in different stages. Shear forces along the cable denote tension when
+                dragging the cable (a). A counterclockwise (CCW) torque is generated when the USB cable head hits the
+                connector fixture from the top (b). A clockwise (CW) torque is produced when the cable rear makes
+                contact with a slot fixture from the top (c).
+            </i>
+        </div>
+
+        <br><br>
+        <hr> -->
+
+        <h1>Paper</h1>
+
+        <div class="paper-thumbnail">
+            <a href="https://arxiv.org">
+                <img class="layered-paper-big" width="100%" src="./resources/paper.png" alt="Paper thumbnail." />
+            </a>
+        </div>
+        <div class="paper-info">
+            <h4>Cable Routing and Assembly using Tactile-driven Motion Primitives</h4>
+            <h5>
+                Achu Wilson*, Helen Jiang*, Wenzhao Lian, and Wenzhen Yuan
+            </h5>
+            <pre><code>@InProceedings{author20XXtitle,
+    title = {Creative and Descriptive Paper Title},
+    author = {Author, First and Author, Second and Author, Third and Author, Fourth and Author, Fifth},
+    booktitle = {Conference},
+    year = {20XX},
+}</code></pre>
+        </div>
+
+        <br><br>
+        <hr><br>
+
+        <h1>Video</h1>
+
+        <div class="video-container">
+            <!-- <iframe src="https://youtu.be/4AOlydEOEng" frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe> -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_F0kCjBgxD0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+
+        <br><br>
+        <hr>
+
+        <!-- <h1>Code</h1>
+        <a href="https://github.com/jasonyzhang/webpage-template">
+            <img style="width:80%;" src="./resources/method_diagram.png" alt="Model overview figure" />
+        </a>
+        <br>
+        <a class="links" href="https://github.com/jasonyzhang/webpage-template">[GitHub]</a>
+
+        <br><br>
+        <hr> -->
+        <!-- <h1>Acknowledgements</h1>
+        <p>
+            tenk u to
+        </p> -->
+        <a class="links" href="https://github.com/jasonyzhang/webpage-template">Webpage template.</a>
+        <br><br>
+    </div>
+
+</body>
+
+</html>
