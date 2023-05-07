@@ -10,8 +10,8 @@
     <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/
         if you update and want to force Facebook to re-scrape. -->
     <meta property="og:image" content="Path to my teaser.png" />
-    <meta property="og:title" content="Creative and Descriptive Paper Title." />
-    <meta property="og:description" content="Paper description." />
+    <meta property="og:title" content="Cable Routing and Assembly using Tactile-driven Motion Primitives." />
+    <!-- <meta property="og:description" content="Paper description." /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Add your Google Analytics tag here -->
@@ -66,23 +66,30 @@
         <br>
         <br>
 
-        <div class="links"><a href="">[Paper]</a></div>
+        <div class="links"><a href="https://arxiv.org/abs/2303.11765">[Paper]</a></div>
         <div class="links"><a href="https://youtu.be/_F0kCjBgxD0">[Video]</a></div>
         <!-- <div class="links"><a href="https://github.com/jasonyzhang/webpage-template">[Code]</a></div> -->
 
         <br>
         <br>
         <div class="teaser">
-            <img src="./resources/teaser.jpg" alt="Teaser figure." />
+            <!-- <img src="./resources/teaser.jpg" alt="Teaser figure." /> -->
+            <!-- <img src="./resources/camera_ready_videos/success_board1_16x_compressed.mp4" alt="Teaser video." /> -->
+
+            <video autoplay loop muted playsinline controls width=700>
+                <source src="./resources/camera_ready_videos/success_board1_16x_compressed.mp4" type="video/mp4">
+            </video>
+
+            <br>
             <br>
 
             <!-- This template was originally made for <a href="http://richzhang.github.io/colorization/">
                     Colorful Image Colorization</a>. It was adapted to be mobile responsive for
                 <a href="https://jasonyzhang.com/phosa/">PHOSA</a>. Try resizing this webpage
                 or opening it on your mobile device. The code can be found in
-                <a href="https://github.com/jasonyzhang/webpage-template"> this repo</a>. -->
+                <a href="https://github.com/jasonyzhang/webpage-template"> this repo†</a>. -->
 
-            <b>Goal-conditioned cable manipulation using visual-tactile perception. </b>
+            <strong>Goal-conditioned cable manipulation using visual-tactile perception. </strong>
             <i>
                 Given an RGBD image of a goal configuration, our system parses the task,
                 generates reference trajectories, and applies a sequence of tactile-guided
@@ -139,8 +146,8 @@
         <h1>Paper</h1>
 
         <div class="paper-thumbnail">
-            <a href="https://arxiv.org">
-                <img class="layered-paper-big" width="100%" src="./resources/paper.png" alt="Paper thumbnail." />
+            <a href="https://arxiv.org/abs/2303.11765">
+                <img class="layered-paper-big" width="100%" src="./resources/thumbnail.png" alt="Paper thumbnail." />
             </a>
         </div>
         <div class="paper-info">
@@ -148,12 +155,14 @@
             <h5>
                 Achu Wilson*, Helen Jiang*, Wenzhao Lian, and Wenzhen Yuan
             </h5>
-            <pre><code>@InProceedings{author20XXtitle,
-    title = {Creative and Descriptive Paper Title},
-    author = {Author, First and Author, Second and Author, Third and Author, Fourth and Author, Fifth},
-    booktitle = {Conference},
-    year = {20XX},
-}</code></pre>
+            <pre><code>
+@InProceedings{wilson2023cable
+    title = {Cable Routing and Assembly using Tactile-driven Motion Primitives},
+    author = {Wilson, Achu and Jiang, Helen and Lian, Wenzhao and Yuan, Wenzhen},
+    booktitle = {International Conference on Robotics and Automation (ICRA)},
+    year = {2023}
+  }
+            </code></pre>
         </div>
 
         <br><br>
@@ -174,6 +183,10 @@
         <br><br>
         <hr>
 
+        <h1>More Examples</h1>
+
+        <!-- <h1>Common Failure Modes</h1> -->
+
         <!-- <h1>Code</h1>
         <a href="https://github.com/jasonyzhang/webpage-template">
             <img style="width:80%;" src="./resources/method_diagram.png" alt="Model overview figure" />
@@ -187,6 +200,8 @@
         <p>
             tenk u to
         </p> -->
+
+
         <a class="links" href="https://github.com/jasonyzhang/webpage-template">Webpage template.</a>
         <br><br>
     </div>
